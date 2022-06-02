@@ -20,17 +20,12 @@ length = strlen(input);
         input[i] = input[i]-13;
     } else if(input[i]>='A' && input[i]<= 'M'){
         input[i] = input[i]+13;}
- 
     }
 putchar(input[i]);
-
 }}
 
-
 int main( int argc, char **argv)  { 
-    
    rot13(argv[1]);
-    
     return 0;
 }
 
