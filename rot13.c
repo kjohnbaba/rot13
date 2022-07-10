@@ -4,13 +4,11 @@
 #include <string.h>
 
 void* rot13(char* input)  {
-
 int i; 
 int length;
 length = strlen(input);
 
  for(i=0; i<length; i++){
-    
     if isalpha(input[i]){
     if(input[i]>='a' && input[i]<= 'm'){
         input[i] = input[i]+13;
